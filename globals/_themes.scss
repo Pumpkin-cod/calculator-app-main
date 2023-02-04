@@ -1,0 +1,220 @@
+@use '../util/' as u;
+
+// Styles for theme 1
+body#theme1
+{
+
+    background-color: u.$desaturatedDarkBlue;
+
+    .header
+    {
+        &__text1
+        {
+            color: u.$White;
+        }
+
+        &__text2
+        {
+            color: u.$White;
+        }
+
+        &__toggler
+        {
+            >p
+            {
+                color: u.$White;
+            }
+        }
+
+        &__screen
+        {
+            >input[type='text']
+            {
+                background-color: u.$veryDarkDesaturatedBlue;
+                color: u.$White;
+            }
+        }
+
+        &__main
+        {
+            background-color: u.$veryDarkDesaturatedBlue;
+        }
+
+        &__button
+        {
+            >button
+            {
+                background-color: u.$lightGrayishOrange;
+                box-shadow: 0px 5px 1.5px rgb(234, 227, 220);
+                color: u.$desaturatedDarkBlue;
+
+                &.color
+                {
+                    background-color: u.$desaturatedDarkBlue;
+                    box-shadow: 0px 5px 1.5px rgb(64, 78, 114);
+                }
+
+                &.double1
+                {
+                    background-color: u.$desaturatedDarkBlue;
+                    box-shadow: 0px 5px 1.5px rgb(64, 78, 114);
+                    color: u.$White;
+                }
+
+                &.double2
+                {
+                    background-color: u.$red;
+                    box-shadow: 0px 5px 1.5px rgb(208, 63, 47);
+                    color: u.$White;
+                }
+            }
+        }
+    }
+}
+
+
+// Styles for Theme 2
+body#theme2
+{
+
+    background-color: u.$lightGray;
+
+    .header
+    {
+        &__text1
+        {
+            color: u.$veryDarkGrayishYellow;
+        }
+
+        &__text2
+        {
+            color: u.$veryDarkGrayishYellow;
+        }
+
+        &__toggler
+        {
+            >p
+            {
+                color: u.$veryDarkGrayishYellow;
+            }
+        }
+
+        &__screen
+        {
+            >input[type='text']
+            {
+                background-color: u.$veryLightGray;
+                color: u.$veryDarkGrayishYellow;
+            }
+        }
+
+        &__main
+        {
+            background-color: u.$grayishRed;
+        }
+
+        &__button
+        {
+            >button
+            {
+                background-color: u.$lightGrayishOrange;
+                box-shadow: 0px 5px 1.5px rgb(234, 227, 220);
+                color: u.$veryDarkGrayishYellow;
+
+                &.color
+                {
+                    background-color: u.$darkModerateCyan;
+                    box-shadow: 0px 5px 1.5px rgb(27, 95, 101);
+                    color: u.$White;
+                }
+
+                &.double1
+                {
+                    background-color: u.$darkModerateCyan;
+                    box-shadow: 0px 5px 1.5px rgb(27, 95, 101);
+                    color: u.$White;
+                }
+
+                &.double2
+                {
+                    background-color: u.$Orange;
+                    box-shadow: 0px 5px 1.5px u.$darkOrange;
+                    color: u.$White;
+                }
+            }
+        }
+    }
+}
+
+
+// Styles for Theme 3
+body#theme3
+{
+    background-color: u.$veryDarkViolet;
+
+    .header
+    {
+        &__text1
+        {
+            color: u.$lightYellow;
+        }
+
+        &__text2
+        {
+            color: u.$lightYellow;
+        }
+
+        &__toggler
+        {
+            >p
+            {
+                color: u.$lightYellow;
+            }
+        }
+
+        &__screen
+        {
+            >input[type='text']
+            {
+                background-color: u.$darkViolet;
+                color: u.$lightYellow;
+            }
+        }
+
+        &__main
+        {
+            background-color: u.$darkViolet;
+        }
+
+        &__button
+        {
+            >button
+            {
+                background-color: u.$veryDarkViolet;
+                box-shadow: 0px 5px 1.5px u.$darkMagenta;
+                color: u.$lightYellow;
+
+                &.color
+                {
+                    background-color: u.$darkViolet;
+                    box-shadow: 0px 5px 1.5px u.$vividMagenta;
+                    color: u.$White;
+                }
+
+                &.double1
+                {
+                    background-color: u.$pureCyan;
+                    box-shadow: 0px 5px 1.5px u.$softCyan;
+                    color: u.$White;
+                }
+
+                &.double2
+                {
+                    background-color: u.$pureCyan;
+                    box-shadow: 0px 5px 1.5px u.$softCyan;
+                    color: u.$White;
+                }
+            }
+        }
+    }
+}
