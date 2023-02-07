@@ -44,40 +44,39 @@
 						<p id="theme_1">1</p>
 						<p id="theme_2">2</p>
 						<p id="theme_3">3</p>
-						<input type="range" name="toggler" class="slider"  id="toggler" min="1" max="3" />
+
+						<div class="header__ball">
+						<div class="box">
+							<div class="circle"></div>
+						</div>
 					</div>
+					</div>
+					
 				</div>
-				<div class="header__screen">
-					<input
-						class="header__screen"
-						type="text"
-						name=""
-						id=""
-						value="23450" />
-				</div>
+				<div class="header__screen"></div>
 			</div>
 		</header>
 
 		<div class="header__main">
 			<div class="header__button">
-				<button>7</button>
-				<button>8</button>
-				<button>9</button>
-				<button class="color">DEL</button>
-				<button>4</button>
-				<button>5</button>
-				<button>6</button>
-				<button>+</button>
-				<button>1</button>
-				<button>2</button>
-				<button>3</button>
-				<button>-</button>
-				<button>.</button>
-				<button>0</button>
-				<button>/</button>
-				<button>x</button>
-				<button class="double1">RESET</button>
-				<button class="double2">=</button>
+				<button data-btn>7</button>
+				<button data-btn>8</button>
+				<button data-btn>9</button>
+				<button data-delete class="color">DEL</button>
+				<button data-btn>4</button>
+				<button data-btn>5</button>
+				<button data-btn>6</button>
+				<button data-btn class="operator">+</button>
+				<button data-btn>1</button>
+				<button data-btn>2</button>
+				<button data-btn>3</button>
+				<button data-btn class="operator">-</button>
+				<button data-btn>.</button>
+				<button data-btn>0</button>
+				<button data-btn class="operator">/</button>
+				<button data-btn class="operator" value="*">*</button>
+				<button data-reset class="double1">RESET</button>
+				<button data-equals class="double2">=</button>
 			</div>
 		</div>
 
@@ -86,6 +85,7 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
-  <script src="./javascript/themes.js"></script>
+		<script src="./javascript/themes.js"></script>
+		<script src="./javascript/calculation.js"></script>
 	</body>
 </html>

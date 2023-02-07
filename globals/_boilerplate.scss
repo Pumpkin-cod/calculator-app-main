@@ -21,17 +21,14 @@ body
     font-family: u.$font;
     font-size: u.$font-med;
     font-weight: u.$weight;
-    background-color: u.$desaturatedDarkBlue;
-
-    
+    background-color: u.$desaturatedDarkBlue;    
 }
 
 h5
 {
-    // padding-left: 1.5rem;
     font-size: u.$font-lg;
-    // color: u.$White;
     margin-bottom: 0;
+
     @include u.breakpoint-up(medium){
         font-size: 3rem;
     }
@@ -39,9 +36,6 @@ h5
 
 p
 {
-   
-    // font-size: u.$font-sm;
-    // color: u.$White;
     padding-bottom: 0;
     margin-bottom: 0;
 }

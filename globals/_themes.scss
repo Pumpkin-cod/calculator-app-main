@@ -26,13 +26,21 @@ body#theme1
             }
         }
 
+        &__ball{
+            .box{
+                >div{
+                    background-color: u.$red;
+                }
+            }
+        }
+
         &__screen
         {
-            >input[type='text']
-            {
-                background-color: u.$veryDarkDesaturatedBlue;
-                color: u.$White;
-            }
+
+
+            background-color: u.$veryDarkDesaturatedBlue;
+            color: u.$White;
+
         }
 
         &__main
@@ -45,13 +53,14 @@ body#theme1
             >button
             {
                 background-color: u.$lightGrayishOrange;
-                box-shadow: 0px 5px 1.5px rgb(234, 227, 220);
+                box-shadow: 0px 5px 1.5px u.$grayishOrange;
                 color: u.$desaturatedDarkBlue;
 
                 &.color
                 {
                     background-color: u.$desaturatedDarkBlue;
                     box-shadow: 0px 5px 1.5px rgb(64, 78, 114);
+                    color: u.$White;
                 }
 
                 &.double1
@@ -99,13 +108,24 @@ body#theme2
             }
         }
 
+                &__ball
+                {
+                    .box
+                    {
+                        >div
+                        {
+                            background-color: u.$Orange;
+                        }
+                    }
+                }
+
         &__screen
         {
-            >input[type='text']
-            {
-                background-color: u.$veryLightGray;
-                color: u.$veryDarkGrayishYellow;
-            }
+
+
+            background-color: u.$veryLightGray;
+            color: u.$veryDarkGrayishYellow;
+
         }
 
         &__main
@@ -118,7 +138,7 @@ body#theme2
             >button
             {
                 background-color: u.$lightGrayishOrange;
-                box-shadow: 0px 5px 1.5px rgb(234, 227, 220);
+                box-shadow: 0px 5px 1.5px rgb(166, 157, 145);
                 color: u.$veryDarkGrayishYellow;
 
                 &.color
@@ -172,13 +192,26 @@ body#theme3
             }
         }
 
+                &__ball
+                {
+                    justify-content: flex-end;
+                    .box
+                    {
+                        // justify-content: flex-end;
+                        >div
+                        {
+                            background-color: u.$pureCyan;  
+                        }
+                    }
+                }
+
         &__screen
         {
-            >input[type='text']
-            {
-                background-color: u.$darkViolet;
-                color: u.$lightYellow;
-            }
+
+
+            background-color: u.$darkViolet;
+            color: u.$lightYellow;
+
         }
 
         &__main
@@ -203,16 +236,16 @@ body#theme3
 
                 &.double1
                 {
-                    background-color: u.$pureCyan;
-                    box-shadow: 0px 5px 1.5px u.$softCyan;
-                    color: u.$White;
+                    background-color: u.$darkViolet;
+                        box-shadow: 0px 5px 1.5px u.$vividMagenta;
+                        color: u.$White;
                 }
 
                 &.double2
                 {
                     background-color: u.$pureCyan;
                     box-shadow: 0px 5px 1.5px u.$softCyan;
-                    color: u.$White;
+                    color: u.$veryDarBlue;
                 }
             }
         }
