@@ -26,9 +26,14 @@ body#theme1
             }
         }
 
-        &__ball{
-            .box{
-                >div{
+        &__ball
+        {
+            .box
+            {
+                background-color: u.$veryDarkDesaturatedBlue;
+
+                >div
+                {
                     background-color: u.$red;
                 }
             }
@@ -108,24 +113,25 @@ body#theme2
             }
         }
 
-                &__ball
+        &__ball
+        {
+            .box
+            {
+                background-color: u.$veryLightGray;
+
+                >div
                 {
-                    .box
-                    {
-                        >div
-                        {
-                            background-color: u.$Orange;
-                        }
-                    }
+                    background-color: u.$Orange;
+                    position: absolute;
+                    left: 1.4375rem;
                 }
+            }
+        }
 
         &__screen
         {
-
-
             background-color: u.$veryLightGray;
             color: u.$veryDarkGrayishYellow;
-
         }
 
         &__main
@@ -192,26 +198,27 @@ body#theme3
             }
         }
 
-                &__ball
+        &__ball
+        {
+            justify-content: flex-end;
+
+            .box
+            {
+                background-color: u.$darkViolet; // justify-content: flex-end;
+
+                >div
                 {
-                    justify-content: flex-end;
-                    .box
-                    {
-                        // justify-content: flex-end;
-                        >div
-                        {
-                            background-color: u.$pureCyan;  
-                        }
-                    }
+                    background-color: u.$pureCyan;
+                    position: absolute;
+                    left: 3.4375rem;
                 }
+            }
+        }
 
         &__screen
         {
-
-
             background-color: u.$darkViolet;
             color: u.$lightYellow;
-
         }
 
         &__main
@@ -237,8 +244,8 @@ body#theme3
                 &.double1
                 {
                     background-color: u.$darkViolet;
-                        box-shadow: 0px 5px 1.5px u.$vividMagenta;
-                        color: u.$White;
+                    box-shadow: 0px 5px 1.5px u.$vividMagenta;
+                    color: u.$White;
                 }
 
                 &.double2

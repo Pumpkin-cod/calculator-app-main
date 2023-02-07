@@ -76,11 +76,12 @@
         .box
         {
             width: 4.5rem;
-            height: 1rem;
+            height: 1.3rem;
             background-color: green;
-            border-radius: 0.3125rem;
+            border-radius: 0.625rem;
             margin-right: 0.5rem;
             position: relative;
+            cursor: pointer;
             // transition: all 3s ease-in-out;
 
             >div
@@ -91,12 +92,9 @@
                 position: absolute;
                 background-color: red;
                 z-index: 1;
-                transition: all 3s ease-in-out;
-
-                &::after{
-                    content: '';
-                    position: absolute;
-                }
+                transition: all 5m ease;
+                top:0.15625rem;
+                left: 0.1875rem;
             }
         }
     }
@@ -112,7 +110,8 @@
         font-size: u.$font-lg;
         // color: u.$White;
         text-align: end;
-        padding-right: 1.5rem;
+        padding: 1.5rem;
+       
 
         @include u.breakpoint-up(medium)
         {
@@ -120,8 +119,6 @@
             padding: 1.5rem;
             height: 6rem;
         }
-
-
     }
 
     &__main
